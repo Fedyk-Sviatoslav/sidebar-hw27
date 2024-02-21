@@ -1,0 +1,48 @@
+.sidebar {
+    position: absolute;
+    height: 421px;
+    width: 400px;
+    background-color:  rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding-top: 300px;
+    transform: translateX(-80%);
+    transition: transform 250ms linear;
+    padding-left: 80px;
+}
+
+.sidebar:hover {
+    transform: translateX(-10%);
+}
+
+.sidebar-title {
+    position: absolute;
+    top: 49%;
+    left: 75%;
+    transform: rotate(90deg);   
+    color: white;
+}
+
+.sidebar-list {
+    list-style: none;
+}
+
+.sidebar-text::before {
+    position: absolute;
+    margin-top: 2.5px;
+    right: 365px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+    display: block;
+    border: 1px solid black;
+    transform: rotate(45deg);
+}
+
+.sidebar-text {
+    transition: color 250ms ease-out;
+}
+
+.sidebar-text:hover {
+    color: yellow;
+}
